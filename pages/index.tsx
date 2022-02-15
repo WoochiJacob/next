@@ -1,11 +1,21 @@
 import type { NextPage } from 'next';
 import styled from '@emotion/styled';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
     const router = useRouter();
 
-    return <Container>sjfkaldsjflkasd;j</Container>;
+    return (
+        <>
+            <Container>
+                <Link href="/">Index</Link>
+            </Container>
+            <Container>
+                <Link href="/about">About</Link>
+            </Container>
+        </>
+    );
 };
 
 const Container = styled.section`
