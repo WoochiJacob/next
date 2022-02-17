@@ -1,45 +1,34 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { useRouter } from 'next/router';
+
+// Components
+import Header from '@components/layout/Header';
+import Footer from '@components/layout/Footer';
 
 interface ILayouts {
     children: React.ReactNode;
 }
 
-const Layouts = ({ children }: ILayouts) => {
-    const router = useRouter();
-
+function Layouts({ children }: ILayouts) {
     return (
         <LayoutBlock>
-            <Header>Header</Header>
+            {/* 헤더 */}
+            <Header />
+
+            {/* 컨텐츠 */}
             {children}
-            <Footer>Footer</Footer>
+
+            {/* 푸터 */}
+            <Footer />
         </LayoutBlock>
     );
-};
+}
 
 const LayoutBlock = styled.section`
     display: flex;
     flex-direction: column;
     height: 100vh;
-`;
-
-const Header = styled.section`
-    width: 1280px;
-    background: #333;
-    margin: 0 auto;
-    height: 80px;
-    font-size: 40px;
-    color: #fff;
-`;
-
-const Footer = styled.section`
-    width: 1280px;
-    background: #333;
-    height: 300px;
-    font-size: 40px;
-    color: #fff;
-    margin: auto auto 0 auto;
+    padding-top: 80px;
 `;
 
 export default Layouts;

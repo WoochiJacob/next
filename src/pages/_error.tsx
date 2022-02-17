@@ -1,7 +1,5 @@
-import type { NextPage } from 'next';
-
-const Error: NextPage = () => {
+function Error() {
     return <div>Error</div>;
-};
+}
 
 export default Error;
