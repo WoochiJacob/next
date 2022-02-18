@@ -5,7 +5,12 @@ function Home() {
     return (
         <>
             <Container>
-                <Link href="/">Index</Link>
+                <Link
+                    href="/"
+                    passHref
+                >
+                    Index
+                </Link>
             </Container>
             <Container>
                 <Link href="/about">About</Link>

@@ -5,7 +5,7 @@
     "singleQuote": true,
     "printWidth": 100,
     "eslintIntegration": true,
-    "endOfLine": "auto",
+    "endOfLine": "lf",
     "parser": "typescript",
     "useTabs": false,
     "arrowParens": "always"
