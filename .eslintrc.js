@@ -10,7 +10,7 @@ module.exports = {
         node: true,
     },
     parser: '@typescript-eslint/parser',
-    plugins: ['react', 'react-hooks', '@typescript-eslint'],
+    plugins: ['react', 'react-hooks', '@typescript-eslint', 'jsx-a11y'],
     extends: [
         'airbnb',
         'plugin:react/recommended',
@@ -18,7 +18,6 @@ module.exports = {
         'eslint:recommended',
         'next',
         'next/core-web-vitals',
-    // 'plugin:prettier/recommended',
     ],
     parserOptions: {
         sourceType: 'module',
@@ -45,6 +44,8 @@ module.exports = {
         '@typescript-eslint/no-shadow': ERROR,
         '@typescript-eslint/no-unused-expressions': ERROR,
         'react-hooks/exhaustive-deps': WARNING,
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': ['error'],
         camelcase: OFF,
         'no-unused-expressions': OFF,
         'no-use-before-define': OFF,
