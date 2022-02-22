@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styled from '@emotion/styled';
 import PravangLogo from '@img/pravang_logo_m.png';
 
@@ -6,7 +7,10 @@ function Header() {
     return (
         <Container>
             <Navigarion>
-                <Logo src={PravangLogo.src} />
+                <Logo
+                    src={PravangLogo}
+                    alt="logo"
+                />
                 <MenuGroup>
                     <Menu>거래소</Menu>
                     <Menu>입출금</Menu>
@@ -38,7 +42,7 @@ const Container = styled.header`
     top: 0;
 `;
 
-const Logo = styled('img')`
+const Logo = styled(Image)`
     height: 40px;
     margin-right: 40px;
 `;
