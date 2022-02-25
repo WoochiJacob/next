@@ -46,6 +46,7 @@ const globalStyles = css`
     height: 100%;
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
+    font-size: 14px;
   }
 
   #__next {
